@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="shortcut icon" href="./Time.svg" type="image/x-icon">
+    <title>Pomodoro-Timer</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" id="logo">Pomodoro-Timer</a>
+        <a href="#s">1. Landing Page</a>
+        <a href="#c">2. About</a>
+        <a href="#e">3. Study Timer</a>
+        <a href="#t">4. To Do List</a>
+        <a href="#i">5.Contact/Reviews</a>
+      </div>
+      <section class="s1" id="s">
+      <div class="head">
+     <span style="font-size:30px;cursor:pointer;" onclick="openNav()" id="men">&#9776;</span></div><script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "270px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+        
+    
+        <p><i>Pomodoro</i>
+        <q>The Future Of Studies</q></p>
+        <img src="./Time.svg" alt="Studying">
+    </section>
+    <section class="s2" id="c">
+        <p id="2">About It</p>
+        <p><q><u>This is an application</u> where you can learn anything without wasting your time,
+        this application is build so that you can focus on the studies. #Focus.</q></p>
+    </section>
+    <section class="s3" id="e">
+        <p id="3">Pomodoro-Timer</p>
+        
+        <div class="app">
+            <div class="time-select">
+              <button data-time="1500">25 Min</button>
+              <button data-time="1800" class="medium-mins">30 Min</button>
+              <button data-time="3600" class="long-mins">60 Min</button>
+            </div>
+            <div class="player-container">
+                <audio class="song">
+                    <source src="./sounds/rain.mp3" />
+                  </audio>
+                  <img src="./svg/play.svg" class="play"></img>
+                  <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                    </svg>
+                  <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                    </svg>
+                  <img src="./svg/replay.svg" class="replay"></img>
+                
+                    <h3 class="time-display">0:00</h3>      
+          </div>
+        
+        </div>
+    </section>
+    <section class="s4" id="t">
+      
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>It's Geography!</li>
+  <li class="checked">Help Mother</li>
+  <li>Go for prayer</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize study table</li>
+</ul>
+
+    </section>
+    <section class="s5" id="i" style="height:90vh;">
+        <p id="4">Contact/Reviews</p >
+          <p class="f">
+           Contact <br><a href="mailto: patan.riyaan@gmail.com">Mohammed Riyaan</a>
+          </p>
+    </section>
+    <footer style="height: 10vh;">
+     <h1> &copy; Devloper:<a href="mailto: patan.riyaan@gmail.com">Mohammed Riyaan</a> </h1>
+  </footer>
+    <script src="./app.js"></script>
+  
+</body>
+</html>

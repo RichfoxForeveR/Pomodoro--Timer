@@ -1,0 +1,84 @@
+
+.head{
+    background-color: var(--head);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 255, 21, 0.692);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5625rem;
+    color: #181818;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2.9rem;
+    margin-left: 50px;
+  }
+  #men{
+      top: 0;
+      color: var(--txt);
+      opacity: 0.8;
+      margin-left: 2rem;
+      transition: .4s ease;
+  }
+  #men:hover{
+      color: #000;
+      opacity: 1;
+      border: 5px solid var(--pb);
+      border-style: dotted;
+  }
+  #Main {
+      display: flex;
+  }
+  #logo{
+      list-style: none;
+      color: brown;
+      text-decoration: none;
+      display: flex;
+  }
+  section#Main #h{
+      font-size: 3em;
+  }
+  
+  #h{
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      margin-left: 50%;
+      color: #00aeff;
+      animation: backInDown;
+      animation-duration: 2s;
+      font-weight: 700;
+  } #h:hover{
+          color: slateblue;
+          cursor: pointer;
+  }
+  #logo:hover{
+      color: tomato;
+      border: 3px solid;
+  }
+  @media screen and (max-height: 700px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
