@@ -550,8 +550,8 @@ section
   left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(-90deg);
           transform: translate(-50%, -50%) rotate(-90deg);
-  pointer-events: cursor;
-  color: red;
+  pointer-events: none;
+  color: #fff;
 }
 
 .player-container svg circle {
@@ -560,7 +560,7 @@ section
 }
 
 .time-display {
-  color: red;
+  color: #bbb;
   position: absolute;
   font-size: 50px;
   bottom: 40%;
