@@ -242,13 +242,13 @@ section p q{
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
     pointer-events: none;
-    color: red;
+    color: #fff;
   }
   .player-container svg circle {
     transition: all 0.2s ease-in-out;
   }
   .time-display {
-    color: red;
+    color: #bbb;
     position: absolute;
     font-size: 50px;
     bottom: 40%;
